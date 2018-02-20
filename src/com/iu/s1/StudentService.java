@@ -48,4 +48,40 @@ public class StudentService {
 			
 		}
 	}
+	//search 메서드
+	//번호를 입력받아서 학생 한명을 찾아서
+	//해당 학생 출력은 studentview class의 viewStudent 메서드에서 출력
+	public int search(Student[] st) {
+		Scanner sc = new Scanner(System.in);
+		
+		StudentView sv = new StudentView();
+		int select =0;
+		System.out.println("검색할 학생번호입력:");
+		int search_num=sc.nextInt();
+		
+			for(int i=0;i<st.length;i++)
+			{
+				
+				if(st[i].num==search_num) {
+					 select = i;
+					break;	
+			}
+		}
+		return select;
 	}
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

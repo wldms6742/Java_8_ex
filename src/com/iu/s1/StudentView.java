@@ -7,18 +7,32 @@ public class StudentView {
 	public void view(Student[] st) {
 
 		for(int i=0;i<st.length;i++) {
-		System.out.println("이름:"+st[i].name);
-		System.out.println("번호:"+st[i].num);
+			System.out.println("이름:"+st[i].name);
+			System.out.println("번호:"+st[i].num);
 
-		System.out.println("국어:"+st[i].kor);
+			System.out.println("국어:"+st[i].kor);
 
-		System.out.println("영어:"+st[i].eng);
+			System.out.println("영어:"+st[i].eng);
 
-		System.out.println("수학:"+st[i].math);
+			System.out.println("수학:"+st[i].math);
 
-		System.out.println("총점:"+st[i].total);
-		System.out.println("평균:"+st[i].avg);
-		
+			System.out.println("총점:"+st[i].total);
+			System.out.println("평균:"+st[i].avg);
+
+		}
 	}
-}
+	public void viewStudent(Student[] st,int n) {
+		System.out.println("이름:"+st[n].name);
+		System.out.println("번호:"+st[n].num);
+
+		System.out.println("국어:"+st[n].kor);
+
+		System.out.println("영어:"+st[n].eng);
+
+		System.out.println("수학:"+st[n].math);
+
+		System.out.println("총점:"+st[n].total);
+		System.out.println("평균:"+st[n].avg);
+	}
+
 }

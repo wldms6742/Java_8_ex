@@ -35,12 +35,12 @@ public class SchoolController {
 				
 				break;
 			case 3:
-				
+				int i = ss.search(student);
+				sv.viewStudent(student,i);
 				break;
 			case 4:
 				
 				sv.view(student);
-				
 				break;
 			case 5:
 				
