@@ -15,6 +15,10 @@ public class StudentView {
 		System.out.println("영어:"+st[i].eng);
 
 		System.out.println("수학:"+st[i].math);
+
+		System.out.println("총점:"+st[i].total);
+		System.out.println("평균:"+st[i].avg);
+		
 	}
 }
 }
